@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import AddMovie from "./components/AddMovie";
+import Dashboard from "./components/Dashboard";
+import Details from "./components/Details";
+import Login from "./components/Login";
+import NavBar from "./components/NavBar";
+import { useUserContext } from "./context";
 
-function App() {
+const App = () => {
+  const { setUserKey } = useUserContext();
+  useEffect(() => {
+    const userApiKey = localStorage.getItem("userCred");
+    if (userApiKey) {
+      setUserKey(userApiKey);
+    }
+  }, [setUserKey]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path=":id/details" element={<Details />} />
+        <Route path="login" element={<Login />} />
+        <Route path="add-movie" element={<AddMovie />} />
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;
