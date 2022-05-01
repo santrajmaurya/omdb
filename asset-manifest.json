@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/omdb/login/static/js/main.d8631890.js",
+    "main.js": "/omdb/login/static/js/main.094dfb6d.js",
     "index.html": "/omdb/login/index.html",
-    "main.d8631890.js.map": "/omdb/login/static/js/main.d8631890.js.map"
+    "main.094dfb6d.js.map": "/omdb/login/static/js/main.094dfb6d.js.map"
   },
   "entrypoints": [
-    "static/js/main.d8631890.js"
+    "static/js/main.094dfb6d.js"
   ]
 }
