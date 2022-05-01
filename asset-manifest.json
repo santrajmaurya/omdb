@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/omdb/static/js/main.9caea8fd.js",
+    "index.html": "/omdb/index.html",
+    "main.9caea8fd.js.map": "/omdb/static/js/main.9caea8fd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9caea8fd.js"
+  ]
+}
