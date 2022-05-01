@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/omdb/login/static/js/main.094dfb6d.js",
-    "index.html": "/omdb/login/index.html",
-    "main.094dfb6d.js.map": "/omdb/login/static/js/main.094dfb6d.js.map"
+    "main.js": "/omdb/static/js/main.094dfb6d.js",
+    "index.html": "/omdb/index.html",
+    "main.094dfb6d.js.map": "/omdb/static/js/main.094dfb6d.js.map"
   },
   "entrypoints": [
     "static/js/main.094dfb6d.js"
