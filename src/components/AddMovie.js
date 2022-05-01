@@ -145,8 +145,7 @@ export default function AddMovie() {
                 <Controller
                   control={control}
                   rules={{
-                    // minLength: 100,
-                    minLength: 5,
+                    minLength: 100,
                     maxLength: 500,
                     required: true,
                   }}

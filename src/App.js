@@ -23,6 +23,7 @@ const App = () => {
       <CssBaseline />
       <NavBar />
       <Routes>
+        <Route path="/" element={<Login />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path=":id/details" element={<Details />} />
         <Route path="login" element={<Login />} />
