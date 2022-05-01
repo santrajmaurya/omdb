@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import { CssBaseline } from "@mui/material";
+
 import AddMovie from "./components/AddMovie";
 import Dashboard from "./components/Dashboard";
 import Details from "./components/Details";
@@ -18,6 +20,7 @@ const App = () => {
 
   return (
     <>
+      <CssBaseline />
       <NavBar />
       <Routes>
         <Route path="dashboard" element={<Dashboard />} />
