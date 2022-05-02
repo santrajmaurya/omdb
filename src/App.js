@@ -23,11 +23,11 @@ const App = () => {
       <CssBaseline />
       <NavBar />
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="dashboard" element={<Dashboard />} />
+        <Route exact path="/" element={<Login />} />
+        <Route exact path="dashboard" element={<Dashboard />} />
         <Route path=":id/details" element={<Details />} />
-        <Route path="login" element={<Login />} />
-        <Route path="add-movie" element={<AddMovie />} />
+        <Route exact path="login" element={<Login />} />
+        <Route exact path="add-movie" element={<AddMovie />} />
       </Routes>
     </>
   );

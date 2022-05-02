@@ -1,8 +1,8 @@
 {
-  "name": "omdb-movies-app",
+  "homepage": "https://santrajmaurya.github.io/omdb",
+  "name": "omdb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://santrajmaurya.github.io/omdb",
   "dependencies": {
     "-": "^0.0.1",
     "@emotion/react": "^11.9.0",
