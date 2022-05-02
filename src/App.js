@@ -23,7 +23,7 @@ const App = () => {
       <CssBaseline />
       <NavBar />
       <Routes>
-        <Route exact path="/" element={<Login />} />
+        <Route exact path="omdb" element={<Login />} />
         <Route exact path="dashboard" element={<Dashboard />} />
         <Route path=":id/details" element={<Details />} />
         <Route exact path="login" element={<Login />} />
