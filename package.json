@@ -1,7 +1,7 @@
 {
-  "homepage": "https://santrajmaurya.github.io/omdb",
+  "homepage": "http://santrajmaurya.github.io/omdb",
   "name": "omdb",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "-": "^0.0.1",
