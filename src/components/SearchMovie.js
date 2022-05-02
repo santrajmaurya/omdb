@@ -57,7 +57,7 @@ export default function SearchMovie() {
       onSubmit={onSearchMovie}
       onKeyDown={onKeyDownHandler}
     >
-      <Paper sx={{ margin: 1, bgcolor: "lightGrey" }}>
+      <Paper sx={{ margin: 1 }}>
         <TextField
           name="title"
           id="title"
@@ -72,7 +72,7 @@ export default function SearchMovie() {
           size="small"
           inputRef={yearInput}
         />
-        <FormControl sx={{ m: 3, minWidth: 120 }} size="small">
+        <FormControl sx={{ m: 3, width: "25ch" }} size="small">
           <InputLabel id="plot">Plot</InputLabel>
           <Select
             id="plot"
@@ -98,7 +98,6 @@ export default function SearchMovie() {
           variant="contained"
           sx={{ mt: 3, mb: 2 }}
           size="large"
-          // type="submit"
           onClick={() => onHandleReset()}
         >
           Reset

@@ -15,7 +15,7 @@ export const UserProvider = ({ children }) => {
 
   const fetchMovies = useCallback(
     (key) => {
-      fetch(`http://www.omdbapi.com/?apikey=${key}&s=comedy`)
+      fetch(`https://www.omdbapi.com/?apikey=${key}&s=comedy`)
         .then((response) => response.json())
         .then((data) => {
           if (data.Response === "True") {
@@ -33,7 +33,7 @@ export const UserProvider = ({ children }) => {
   );
   const searchMovie = useCallback((query, key) => {
     fetch(
-      `http://www.omdbapi.com/?apikey=${key}&s=${query.title}&y=${query.year}&plot=${query.plot}`
+      `https://www.omdbapi.com/?apikey=${key}&s=${query.title}&y=${query.year}&plot=${query.plot}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -48,7 +48,7 @@ export const UserProvider = ({ children }) => {
 
   const fetchMovieDetails = useCallback(
     (id, key) => {
-      fetch(`http://www.omdbapi.com/?i=${id}&apikey=${key}`)
+      fetch(`https://www.omdbapi.com/?i=${id}&apikey=${key}`)
         .then((response) => response.json())
         .then((data) => {
           if (data.Response === "True") {

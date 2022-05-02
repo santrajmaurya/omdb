@@ -36,7 +36,7 @@ export default function Details() {
       alignContent="stretch"
       spacing={3}
     >
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={12} sm={3}>
         <Card
           sx={{
             display: "flex",
@@ -55,7 +55,6 @@ export default function Details() {
             component="img"
             image={movieDetails.Poster}
             alt="Paella dish"
-            style={{}}
             height="450"
           />
           <CardContent>
@@ -72,7 +71,7 @@ export default function Details() {
           </CardActions>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={5}>
+      <Grid item xs={12} sm={5}>
         <Card
           sx={{
             bgcolor: "black",

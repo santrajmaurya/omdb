@@ -7,10 +7,12 @@ import Dashboard from "./components/Dashboard";
 import Details from "./components/Details";
 import Login from "./components/Login";
 import NavBar from "./components/NavBar";
+import ProtectedRoute from "./ProtectedRute";
+import PageNotFound from "./components/PageNotFound";
 import { useUserContext } from "./context";
 
 const App = () => {
-  const { setUserKey } = useUserContext();
+  const { setUserKey, userKey } = useUserContext();
   useEffect(() => {
     const userApiKey = localStorage.getItem("userCred");
     if (userApiKey) {
@@ -24,10 +26,13 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route exact path="omdb" element={<Login />} />
-        <Route exact path="dashboard" element={<Dashboard />} />
-        <Route path=":id/details" element={<Details />} />
         <Route exact path="login" element={<Login />} />
-        <Route exact path="add-movie" element={<AddMovie />} />
+        <Route element={<ProtectedRoute userKey={userKey} />}>
+          <Route exact path="dashboard" element={<Dashboard />} />
+          <Route path=":id/details" element={<Details />} />
+          <Route exact path="add-movie" element={<AddMovie />} />
+        </Route>
+        <Route path="*" element={<PageNotFound userKey={userKey} />} />
       </Routes>
     </>
   );
